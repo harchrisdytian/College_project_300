@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [Header("Level Select")]
-    public int level = 0;
+    public int level = 2;
 
     void Start()
     {
