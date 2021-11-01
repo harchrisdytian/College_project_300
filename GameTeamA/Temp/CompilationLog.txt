@@ -1,6 +1,10 @@
 # Starting compiling Assembly-CSharp.dll
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-facc06cac3a1638408c7ca991c45cf9a
+=======
+C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-25e57aee13c546d44bb26e7a49114189
+>>>>>>> Stashed changes
 =======
 C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-25e57aee13c546d44bb26e7a49114189
 >>>>>>> Stashed changes

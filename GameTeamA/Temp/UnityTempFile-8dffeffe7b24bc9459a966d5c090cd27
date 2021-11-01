@@ -5,11 +5,11 @@
 /refout:Temp/Assembly-CSharp.dll.ref
 /deterministic
 /debug:portable
-/optimize-
+/optimize+
 /nostdlib+
 /preferreduilang:en-US
 /langversion:8.0
-/reference:"C:/Users/christian hardy/OneDrive/Documents/GitHub/College_project_300/GameTeamA/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+/reference:C:/Users/gunna/OneDrive/Documents/GitHub/College_project_300/GameTeamA/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll"
@@ -334,4 +334,5 @@
 /define:UNITY_STANDALONE_WIN
 /define:UNITY_TEAM_LICENSE
 /define:USE_SEARCH_ENGINE_API
+Assets\EnemyScript.cs
 Assets\LevelManager.cs
