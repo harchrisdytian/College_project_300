@@ -133,6 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 605910577}
   - component: {fileID: 605910576}
+  - component: {fileID: 605910579}
+  - component: {fileID: 605910578}
   m_Layer: 0
   m_Name: cashier1
   m_TagString: Untagged
@@ -180,7 +182,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8c342191dc8a1254b8a26f1310604f0c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 444dac2e83f9b1542b0a09f8d4b4ed1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -199,12 +201,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605910575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.6, y: 30.7, z: 0}
+  m_LocalPosition: {x: -0.3, y: 30.7, z: 0}
   m_LocalScale: {x: 5.1336, y: 5.1336, z: 5.1336}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &605910578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605910575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9d10c1fe082424483198866acf9e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EbulletsAmount: 15
+  startAngle: 90
+  endAngle: 270
+--- !u!114 &605910579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605910575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f007acfc24b2f4db469ee8b39bbd7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1034396266
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +243,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1034396267}
+  - component: {fileID: 1034396268}
+  - component: {fileID: 1034396269}
   m_Layer: 0
   m_Name: BulletSpawn
   m_TagString: Untagged
@@ -233,8 +264,36 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1034396268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034396266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc161870d391074cbc29589bd42e38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnedBulllet: {fileID: 1220590755900718418, guid: 791af940f5618044aab15e0c24044775, type: 3}
+--- !u!114 &1034396269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034396266}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9d10c1fe082424483198866acf9e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EbulletsAmount: 10
+  startAngle: 90
+  endAngle: 270
 --- !u!1 &1055213393
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +374,7 @@ Transform:
   m_LocalScale: {x: 12.454499, y: 15, z: 25}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1936167273
 GameObject:
@@ -347,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
+  timer: {fileID: 0}
 --- !u!4 &1936167275
 Transform:
   m_ObjectHideFlags: 0
@@ -374,7 +434,7 @@ GameObject:
   - component: {fileID: 2129362698}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -397,7 +457,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -412,7 +472,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 5
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
