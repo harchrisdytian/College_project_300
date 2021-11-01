@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour
     private void Update()
     {
         timerFloat = Time.time;
-        timer.text = timerFloat.ToString();
+        timer.text = "score: "; Mathf.Round(timerFloat).ToString();
     }
 
     void LevelStateMachine(int level_value)
