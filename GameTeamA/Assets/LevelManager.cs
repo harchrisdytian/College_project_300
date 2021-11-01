@@ -11,10 +11,12 @@ public class LevelManager : MonoBehaviour
 
     [Header("Objects")]
     public Text timer;
+    public Canvas canvas;
+
 
     void Start()
     {
-        
+        canvas.enabled = false;
         LevelStateMachine(level);
         
     }
