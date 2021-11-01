@@ -11,17 +11,19 @@ public class LevelManager : MonoBehaviour
 
     [Header("Objects")]
     public Text timer;
+    public Canvas canvas;
+
 
     void Start()
     {
-        
+        canvas.enabled = false;
         LevelStateMachine(level);
         
     }
     private void Update()
     {
         timerFloat = Time.time;
-        timer.text = timerFloat.ToString();
+        timer.text = "score: "; Mathf.Round(timerFloat).ToString();
     }
 
     void LevelStateMachine(int level_value)
@@ -32,8 +34,16 @@ public class LevelManager : MonoBehaviour
             case 0:
                 //do code
                 break;
+            case 1:
+                LastLevel();
+                break;
         }
         level = level_value;
+    }   
+    void LastLevel()
+    {
+        
     }
 
 }
+
