@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.TestTools.CodeCoverage.Sample.Asteroids", "Unity.TestTools.CodeCoverage.Sample.Asteroids.csproj", "{765C6798-E2B6-FD47-05CF-DC10E31A3DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.TestTools.CodeCoverage.Sample.Asteroids.Tests", "Unity.TestTools.CodeCoverage.Sample.Asteroids.Tests.csproj", "{76DA3039-72E1-7D78-030B-C9846B4E08C8}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D46ED31A-3D8A-5F7C-E29D-65709FFA28CE}"
 EndProject
 Global
@@ -9,6 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{765C6798-E2B6-FD47-05CF-DC10E31A3DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765C6798-E2B6-FD47-05CF-DC10E31A3DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765C6798-E2B6-FD47-05CF-DC10E31A3DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765C6798-E2B6-FD47-05CF-DC10E31A3DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DA3039-72E1-7D78-030B-C9846B4E08C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DA3039-72E1-7D78-030B-C9846B4E08C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DA3039-72E1-7D78-030B-C9846B4E08C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DA3039-72E1-7D78-030B-C9846B4E08C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D46ED31A-3D8A-5F7C-E29D-65709FFA28CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D46ED31A-3D8A-5F7C-E29D-65709FFA28CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D46ED31A-3D8A-5F7C-E29D-65709FFA28CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
