@@ -32,8 +32,16 @@ public class LevelManager : MonoBehaviour
             case 0:
                 //do code
                 break;
+            case 1:
+                LastLevel();
+                break;
         }
         level = level_value;
+    }   
+    void LastLevel()
+    {
+
     }
 
 }
+
