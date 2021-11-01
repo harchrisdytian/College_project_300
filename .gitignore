@@ -73,3 +73,5 @@ GameTeamA/Library/Artifacts/d2/d2563c5f66f14b8f0433dbba993fced4
 GameTeamA/Library/Artifacts/87/8724b88973bcbda448d8f5dc1a137048
 GameTeamA/Library/Artifacts/d2/d2563c5f66f14b8f0433dbba993fced4
 GameTeamA/Temp/UnityLockfile
+*.dll
+*.sln
